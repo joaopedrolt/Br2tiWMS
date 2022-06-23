@@ -1,0 +1,41 @@
+* {
+    margin: 0px; 
+    padding: 0px; 
+    box-sizing: border-box;
+}
+body{
+    font-family: Montserrat, 'Open Sans';
+    height: 100%;
+}
+html, body {
+    overflow: auto;
+}
+ul{
+    list-style: none;
+}
+.frame{
+    display: flex;
+    height: 100%;
+    width: 100%; 
+    min-height: 100vh;
+}
+.section{
+    flex-grow: 1;
+    background-color: #f7f7f7;
+    padding: 50px;
+    overflow-x: hidden;
+}
+.nav-filler{
+    min-width: 70px;
+    background-color: #141414;
+    height: 100%;
+}
+.mobile{
+    overflow: hidden;
+}
+
+@media (max-width: 1280px) {
+    .section{
+        padding: 20px;
+    }
+}

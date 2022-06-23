@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#login-view{
+    height: 100vh;
+    background-color: #f7f7f7;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 85px;
+}
+#logo-login{
+    background-image: url('../../images/logo.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 450px;
+    height: 350px;
+    animation: load 0.4s ease-in;
+    transition: all 0.5s ease;
+}
+#logo-login:hover{
+    transform: scale(1.03);
+}
+.login-area--bottom{
+    width: 350px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.inputfild{
+    display: flex;
+    flex: 1;
+    margin-bottom: 23px;
+}
+.input-logo{
+    padding: 12px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+svg{
+    transition: all 0.5s ease;
+}
+svg:hover{
+    transform: scale(1.25);
+}
+input,
+button{
+    outline: none;
+    border: 0;
+    border-radius: 8px;
+}
+input{
+    background-color: #fefefc;
+    font-size: 18px;
+    padding: 16px 16px 16px 16px;
+    width: 100%; 
+    font-size: 16px;
+    color: #2F2F2F;
+}
+button{
+    background-color: #f5cf09;
+    padding: 17px;
+    color: #fefefc;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    transform: scale(1);
+}
+button:hover{
+    transform: scale(1.05);
+    filter: brightness(103%);
+}
+
+@keyframes load {
+    0%   {opacity: 0%;}
+    100% {opacity: 100;}
+}

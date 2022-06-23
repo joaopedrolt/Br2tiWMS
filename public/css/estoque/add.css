@@ -1,0 +1,81 @@
+.add-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+}
+select{
+    display: grid;
+    grid-template-areas: "select";
+    width: 50px;
+    height: 50px;
+    border: 0;
+    font-size: 16px;
+    cursor: pointer;
+    line-height: 1.1;
+    background-color: #fefefc;
+    padding: 5px;
+    font-size: 16px;
+}
+option {
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+.add-area{
+    display: flex;
+    justify-content: center;
+}
+input, button {
+    outline: none;
+    border: 0;
+}
+.input-text-add,
+.input-number-add{
+    background-color: #fefefc;
+    padding: 16px 16px 16px 16px;
+    width: 100%; 
+    font-size: 16px;
+    color: #2F2F2F;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+.gaveta{
+    display: flex;
+    margin-bottom: 10px;
+    width: 100%;
+    background-color: red;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.gaveta-label{
+    background-color: #fefefc;
+    height: 50px;
+    width: 100%; 
+    font-size: 16px;
+    color: #767676;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    font-family: 'Arial';
+}
+.button-add{
+    background-color: #58bb43;
+    display: flex;
+    padding: 17px;
+    justify-content: center;
+    align-items: center;
+    color: #fefefc;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    transform: scale(1);
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-decoration: none;
+}

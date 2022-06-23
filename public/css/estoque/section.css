@@ -1,0 +1,51 @@
+.section-title{
+    font-size: 5vw;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 200;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+    text-transform: uppercase;
+}
+.logo-title{
+    background-image: url(./logo.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 380px;
+    height: 150px;
+}
+.title{
+    margin-left: 50px;
+}
+.section.processadores{
+  
+}
+.section.processadores-add{
+    display: none;
+}
+
+@media (max-width: 765px) {
+    .logo-title{
+        display: none;
+    }
+    .section-title{
+        justify-content: center;
+    }
+    .sortby-area{
+        display: flex;
+        flex-direction: column;
+    }
+    .section-title{
+        padding-right: 0px;  
+    }
+    .title{
+        margin: 0;
+    }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "br2ti",
+  "version": "1.0.0",
+  "description": "Software de Gestao",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaopedrolt/br2ti.git"
+  },
+  "author": "Joao Pedro Lima",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joaopedrolt/br2ti/issues"
+  },
+  "homepage": "https://github.com/joaopedrolt/br2ti#readme"
+}

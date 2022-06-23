@@ -71,7 +71,7 @@ input{
 }
 button{
     background-color: #f5cf09;
-    padding: 17px;
+    padding: 0;
     color: #fefefc;
     text-transform: uppercase;
     font-weight: bold;
@@ -82,6 +82,14 @@ button{
 button:hover{
     transform: scale(1.05);
     filter: brightness(103%);
+}
+.linktemporary{
+    text-decoration: none;
+    color: #fefefc;
+    height: 100%;
+    width: 100%;
+    display: block;
+    padding: 17px;
 }
 
 @keyframes load {

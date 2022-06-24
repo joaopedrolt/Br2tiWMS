@@ -1,8 +1,22 @@
 import { Request, Response } from 'express';
-import { sequelize } from '../instances/mysql';
+import { Cpu } from '../models/Cpu';
+
+const showCpu: boolean = true;
 
 export const getCpu = async (req: Request, res:Response)=>{
 
-    res.render('estoque');
+    var processadores;
+
+    try {
+        processadores = await Cpu.findAll();
+        //console.log("9999999999999999999999999::: ", JSON.stringify(processadores));
+    } catch (error) {
+        console.log("Erro ao carregar os procesadores: ", error);
+    }
+
+    res.render('estoque', {
+        processadores,
+        showCpu
+    });
     
 };

@@ -1,39 +1,36 @@
 import { Model, DataTypes } from 'sequelize';
 import { sequelize } from '../instances/mysql';
 
-export interface PedidosInstance extends Model{
+interface CpuInstance extends Model{
     id: number,
-    origem: string,
-    destino: string,
-    carregamento: string,
-    cliente: string,
-    motorista: string,
-    status: string
-}
-export const Pedidos = sequelize.define<PedidosInstance>('Pedidos', {
+    modelo: string,
+    quantidade: number,
+    gaveta: number,
+    desc: string
+};
+
+export const Cpu = sequelize.define<CpuInstance>('Cpu', {
     id: {
         primaryKey: true,
-        type: DataTypes.INTEGER
+        type: DataTypes.INTEGER,
+        autoIncrement: true
     },
-    origem: {
-        type: DataTypes.STRING
+    modelo: {
+        type: DataTypes.STRING,
+        allowNull: false
     },
-    destino: {
-        type: DataTypes.STRING
+    quantidade: {
+        type: DataTypes.INTEGER,
+        allowNull: false
     },
-    carregamento: {
-        type: DataTypes.STRING
+    gaveta: {
+        type: DataTypes.INTEGER,
+        allowNull: false
     },
-    cliente: {
-        type: DataTypes.STRING
-    },
-    motorista: {
-        type: DataTypes.STRING
-    },
-    status: {
+    desc: {
         type: DataTypes.STRING
     }
 }, {
-    tableName: 'pedidos',
+    tableName: 'cpu',
     timestamps: false
 });

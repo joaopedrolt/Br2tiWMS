@@ -1,293 +1,159 @@
 {{>partials/head}}
 <body>
     <div class="frame">
-        <section class="nav-menu">
-            <div class="nav-area">
-                <nav>
-                    <ul class="nav-ul">
-                        <li class="nav-item" id ="teste">
-                            <div class="icon-container active-item">
-                                <svg version="1.1" class="nav-icons active-item" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                viewBox="0 0 485 485" style="enable-background:new 0 0 485 485;" xml:space="preserve"><g>
-                                    <path d="M316.064,168.935H168.936v147.13h147.129V168.935z M286.064,286.065h-87.129v-87.13h87.129V286.065z"/>
-                                    <path d="M485,171.944v-30h-92.546V92.546h-49.653V0h-30v92.546H257.5V0h-30v92.546h-55.301V0h-30v92.546H92.546v49.398H0v30h92.546
-                                        v55.301H0v30h92.546v55.301H0v30h92.546v49.907h49.653V485h30v-92.546H227.5V485h30v-92.546h55.301V485h30v-92.546h49.653v-49.907
-                                        H485v-30h-92.546v-55.301H485v-30h-92.546v-55.301H485z M362.454,362.454H122.546V122.546h239.908V362.454z"/></g><g></g> <g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g> <g></g><g></g><g></g>
-                                </svg>
+        {{>partials/menu}}
+        {{#showCpu}}
+            <section class="section processadores">
+                <div class="section-title">
+                    <div class="logo-title"></div>
+                    <div class="title">Processadores</div>
+                </div>
+                <div class="section-analytics">
+                    <div class="analytics">
+                        <div class="analytics-min">
+                            <div class="a-left-side">
+                                <p class="a-number">12</p>
+                                <p class="a-analytics">Estatistica 1</p>
                             </div>
-                            <div class="hover-info">Processadores</div>
-                        </li>
-                        <li class="nav-item">
-                            <div class="icon-container">
-                                <svg version="1.1" class="nav-icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                    viewBox="0 0 299.92 299.92" style="enable-background:new 0 0 299.92 299.92;" xml:space="preserve">
-                                    <g><g><g>
-                                                <path d="M293.4,65.2H6.52C2.914,65.2,0,68.114,0,71.72v117.36c0,3.606,2.914,6.52,6.52,6.52h6.52v32.6
-                                                    c0,3.606,2.914,6.52,6.52,6.52h260.8c3.606,0,6.52-2.914,6.52-6.52v-32.6h6.52c3.606,0,6.52-2.914,6.52-6.52V71.72
-                                                    C299.92,68.114,297.006,65.2,293.4,65.2z M273.84,221.68h-19.56H228.2h-26.08h-26.08h-26.08h-26.08H97.8H71.72H45.64H26.08V195.6
-                                                    h19.56h26.08H97.8h26.08h26.08h26.08h26.08h26.08h26.08h19.56V221.68z M286.88,182.56h-6.52H19.56h-6.52V78.24h273.84V182.56z"/>
-                                                <path d="M32.6,169.52h39.12c3.606,0,6.52-2.914,6.52-6.52V97.8c0-3.606-2.914-6.52-6.52-6.52H32.6c-3.606,0-6.52,2.914-6.52,6.52
-                                                    V163C26.08,166.606,28.994,169.52,32.6,169.52z M39.12,104.32H65.2v52.16H39.12V104.32z"/>
-                                                <path d="M97.8,169.52h39.12c3.606,0,6.52-2.914,6.52-6.52V97.8c0-3.606-2.914-6.52-6.52-6.52H97.8c-3.606,0-6.52,2.914-6.52,6.52
-                                                    V163C91.28,166.606,94.194,169.52,97.8,169.52z M104.32,104.32h26.08v52.16h-26.08V104.32z"/>
-                                                <path d="M163,169.52h39.12c3.606,0,6.52-2.914,6.52-6.52V97.8c0-3.606-2.914-6.52-6.52-6.52H163c-3.606,0-6.52,2.914-6.52,6.52
-                                                    V163C156.48,166.606,159.394,169.52,163,169.52z M169.52,104.32h26.08v52.16h-26.08V104.32z"/>
-                                                <path d="M228.2,169.52h39.12c3.606,0,6.52-2.914,6.52-6.52V97.8c0-3.606-2.914-6.52-6.52-6.52H228.2
-                                                    c-3.606,0-6.52,2.914-6.52,6.52V163C221.68,166.606,224.594,169.52,228.2,169.52z M234.72,104.32h26.08v52.16h-26.08V104.32z"/>
-                                                <path d="M52.16,215.16v-13.04c0-3.606-2.914-6.52-6.52-6.52c-3.606,0-6.52,2.914-6.52,6.52v13.04c0,3.606,2.914,6.52,6.52,6.52
-                                                    C49.246,221.68,52.16,218.766,52.16,215.16z"/>
-                                                <path d="M78.24,215.16v-13.04c0-3.606-2.914-6.52-6.52-6.52c-3.606,0-6.52,2.914-6.52,6.52v13.04c0,3.606,2.914,6.52,6.52,6.52
-                                                    C75.326,221.68,78.24,218.766,78.24,215.16z"/>
-                                                <path d="M104.32,215.16v-13.04c0-3.606-2.914-6.52-6.52-6.52c-3.606,0-6.52,2.914-6.52,6.52v13.04c0,3.606,2.914,6.52,6.52,6.52
-                                                    C101.406,221.68,104.32,218.766,104.32,215.16z"/>
-                                                <path d="M130.4,215.16v-13.04c0-3.606-2.914-6.52-6.52-6.52c-3.606,0-6.52,2.914-6.52,6.52v13.04c0,3.606,2.914,6.52,6.52,6.52
-                                                    C127.486,221.68,130.4,218.766,130.4,215.16z"/>
-                                                <path d="M156.48,215.16v-13.04c0-3.606-2.914-6.52-6.52-6.52s-6.52,2.914-6.52,6.52v13.04c0,3.606,2.914,6.52,6.52,6.52
-                                                    S156.48,218.766,156.48,215.16z"/>
-                                                <path d="M182.56,215.16v-13.04c0-3.606-2.914-6.52-6.52-6.52c-3.606,0-6.52,2.914-6.52,6.52v13.04c0,3.606,2.914,6.52,6.52,6.52
-                                                    C179.646,221.68,182.56,218.766,182.56,215.16z"/>
-                                                <path d="M208.64,215.16v-13.04c0-3.606-2.914-6.52-6.52-6.52c-3.606,0-6.52,2.914-6.52,6.52v13.04c0,3.606,2.914,6.52,6.52,6.52
-                                                    C205.726,221.68,208.64,218.766,208.64,215.16z"/>
-                                                <path d="M234.72,215.16v-13.04c0-3.606-2.914-6.52-6.52-6.52c-3.606,0-6.52,2.914-6.52,6.52v13.04c0,3.606,2.914,6.52,6.52,6.52
-                                                    C231.806,221.68,234.72,218.766,234.72,215.16z"/>
-                                                <path d="M260.8,215.16v-13.04c0-3.606-2.914-6.52-6.52-6.52c-3.606,0-6.52,2.914-6.52,6.52v13.04c0,3.606,2.914,6.52,6.52,6.52
-                                                    C257.886,221.68,260.8,218.766,260.8,215.16z"/>
-                                            </g></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
-                                </svg>
+                            <div class="a-right-side">
+                                <svg width="50px" height="50px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Files_Folder40"/><g id="Files_Folder39"/><g id="Files_Folder38"/><g id="Files_Folder37"/><g id="Files_Folder36"/><g id="Files_Folder35"/><g id="Files_Folder34"/><g id="Files_Folder33"/><g id="Files_Folder32"/><g id="Files_Folder31"/><g id="Files_Folder30"/><g id="Files_Folder29"/><g id="Files_Folder28"/><g id="Files_Folder27"/><g id="Files_Folder26"/><g id="Files_Folder25"><path d="M31,10v17c0,0.55-0.45,1-1,1H2c-0.55,0-1-0.45-1-1V5c0-0.55,0.45-1,1-1h11c0.35,0,0.68,0.18,0.86,0.49   L16.57,9H30C30.55,9,31,9.45,31,10z" fill="#FFC10A"/><g><path d="M19.6367,24c-0.0068,0-0.0146,0-0.0215,0c-0.3125-0.0068-0.6035-0.1592-0.7871-0.4121l-3.6367-5    c-0.3252-0.4463-0.2266-1.0713,0.2207-1.3965c0.4473-0.3242,1.0723-0.2275,1.3965,0.2207l2.8633,3.9365l5.5459-6.9707    c0.3428-0.4326,0.9717-0.5049,1.4043-0.1602c0.4326,0.3438,0.5039,0.9727,0.1602,1.4043l-6.3633,8    C20.2295,23.8613,19.9414,24,19.6367,24z" fill="#FE9803"/></g></g><g id="Files_Folder24"/><g id="Files_Folder23"/><g id="Files_Folder22"/><g id="Files_Folder21"/><g id="Files_Folder20"/><g id="Files_Folder19"/><g id="Files_Folder18"/><g id="Files_Folder17"/><g id="Files_Folder16"/><g id="Files_Folder15"/><g id="Files_Folder14"/><g id="Files_Folder13"/><g id="Files_Folder12"/><g id="Files_Folder11"/><g id="Files_Folder10"/><g id="Files_Folder09"/><g id="Files_Folder08"/><g id="Files_Folder07"/><g id="Files_Folder06"/><g id="Files_Folder05"/><g id="Files_Folder04"/><g id="Files_Folder03"/><g id="Files_Folder02"/><g id="Files_Folder01"/></svg>
                             </div>
-                            <div class="hover-info">Memórias</div>
-                        </li>
-                        <li class="nav-item">
-                            <div class="icon-container">
-                                <svg version="1.1" class="nav-icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                               <g>
-                                   <g>
-                                       <path d="M501.106,43.574H10.894C4.878,43.574,0,48.452,0,54.468v403.064c0,6.016,4.878,10.894,10.894,10.894h490.213
-                                           c6.016,0,10.894-4.878,10.894-10.894V54.468C512,48.452,507.122,43.574,501.106,43.574z M490.213,446.638H21.787V65.362h468.426
-                                           V446.638z"/>
-                                   </g>
-                               </g>
-                               <g>
-                                   <g>
-                                       <path d="M328.17,118.468c-78.09,0-141.617,63.527-141.617,141.617S250.08,401.702,328.17,401.702s141.617-63.527,141.617-141.617
-                                           S406.261,118.468,328.17,118.468z M328.17,379.915c-66.074,0-119.83-53.755-119.83-119.83s53.755-119.83,119.83-119.83
-                                           S448,194.011,448,260.085S394.245,379.915,328.17,379.915z"/>
-                                   </g>
-                               </g>
-                               <g>
-                                   <g>
-                                       <path d="M328.17,205.617c-11.082,0-21.378,3.367-29.989,9.074l-16.777-16.776c-4.255-4.255-11.149-4.255-15.404,0
-                                           s-4.255,11.149,0,15.404l16.776,16.777c-5.707,8.612-9.074,18.907-9.074,29.989c0,30.032,24.436,54.468,54.468,54.468
-                                           s54.468-24.436,54.468-54.468C382.638,230.053,358.202,205.617,328.17,205.617z M328.17,292.766
-                                           c-18.021,0-32.681-14.659-32.681-32.681c0-18.021,14.66-32.681,32.681-32.681s32.681,14.66,32.681,32.681
-                                           C360.851,278.106,346.192,292.766,328.17,292.766z"/>
-                                   </g>
-                               </g>
-                               <g>
-                                   <g>
-                                       <rect x="98.043" y="141.617" width="21.787" height="228.766"/>
-                                   </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
-                                </svg>
+                        </div>
+                    </div>
+                    <div class="analytics">
+                        <div class="analytics-min">
+                            <div class="a-left-side">
+                                <p class="a-number">12</p>
+                                <p class="a-analytics">Estatistica 2</p>
                             </div>
-                            <div class="hover-info">HD</div>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </section>
-        <div class="menu-burger--area">
-            <i class="menu-burger"></i>
-        </div>
-        <div class="mobile-nav--area">
-            <nav class="mobile-nav">
-                <ul>
-                    <li class="nav-m-item nav-m-active">Processadores</li>
-                    <li class="nav-m-item">Memórias</li>
-                    <li class="nav-m-item">HD</li>
-                </ul>
-            </nav>
-        </div>
-        <div class="nav-filler"></div>
-        <div class="nav-bg-filler"></div>
-        <section class="section processadores">
-            <div class="section-title">
-                <div class="logo-title"></div>
-                <div class="title">Processadores</div>
-            </div>
-            <div class="section-analytics">
-                <div class="analytics">
-                    <div class="analytics-min">
-                        <div class="a-left-side">
-                            <p class="a-number">12</p>
-                            <p class="a-analytics">Estatistica 1</p>
+                            <div class="a-right-side">
+                                <svg width="50px" height="50px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Files_Folder40"/><g id="Files_Folder39"/><g id="Files_Folder38"/><g id="Files_Folder37"/><g id="Files_Folder36"/><g id="Files_Folder35"/><g id="Files_Folder34"/><g id="Files_Folder33"/><g id="Files_Folder32"/><g id="Files_Folder31"/><g id="Files_Folder30"/><g id="Files_Folder29"/><g id="Files_Folder28"/><g id="Files_Folder27"/><g id="Files_Folder26"/><g id="Files_Folder25"/><g id="Files_Folder24"/><g id="Files_Folder23"/><g id="Files_Folder22"/><g id="Files_Folder21"/><g id="Files_Folder20"/><g id="Files_Folder19"/><g id="Files_Folder18"/><g id="Files_Folder17"/><g id="Files_Folder16"/><g id="Files_Folder15"/><g id="Files_Folder14"><g><g><g><path d="M27,6v22c0,1.65-1.35,3-3,3H8c-1.65,0-3-1.35-3-3V6c0-1.65,1.35-3,3-3h16C25.65,3,27,4.35,27,6z" fill="#FFC10A"/></g></g><g><g><path d="M21,3v2c0,1.1-0.9,2-2,2h-6c-1.1,0-2-0.9-2-2V3c0-1.1,0.9-2,2-2h6C20.1,1,21,1.9,21,3z" fill="#FE9803"/></g></g></g><path d="M21,17h-4v-4c0-0.5522-0.4473-1-1-1s-1,0.4478-1,1v4h-4c-0.5527,0-1,0.4478-1,1s0.4473,1,1,1h4v4   c0,0.5522,0.4473,1,1,1s1-0.4478,1-1v-4h4c0.5527,0,1-0.4478,1-1S21.5527,17,21,17z" fill="#FE9803"/></g><g id="Files_Folder13"/><g id="Files_Folder12"/><g id="Files_Folder11"/><g id="Files_Folder10"/><g id="Files_Folder09"/><g id="Files_Folder08"/><g id="Files_Folder07"/><g id="Files_Folder06"/><g id="Files_Folder05"/><g id="Files_Folder04"/><g id="Files_Folder03"/><g id="Files_Folder02"/><g id="Files_Folder01"/></svg>
+                            </div>
                         </div>
-                        <div class="a-right-side">
-                            <svg width="50px" height="50px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Files_Folder40"/><g id="Files_Folder39"/><g id="Files_Folder38"/><g id="Files_Folder37"/><g id="Files_Folder36"/><g id="Files_Folder35"/><g id="Files_Folder34"/><g id="Files_Folder33"/><g id="Files_Folder32"/><g id="Files_Folder31"/><g id="Files_Folder30"/><g id="Files_Folder29"/><g id="Files_Folder28"/><g id="Files_Folder27"/><g id="Files_Folder26"/><g id="Files_Folder25"><path d="M31,10v17c0,0.55-0.45,1-1,1H2c-0.55,0-1-0.45-1-1V5c0-0.55,0.45-1,1-1h11c0.35,0,0.68,0.18,0.86,0.49   L16.57,9H30C30.55,9,31,9.45,31,10z" fill="#FFC10A"/><g><path d="M19.6367,24c-0.0068,0-0.0146,0-0.0215,0c-0.3125-0.0068-0.6035-0.1592-0.7871-0.4121l-3.6367-5    c-0.3252-0.4463-0.2266-1.0713,0.2207-1.3965c0.4473-0.3242,1.0723-0.2275,1.3965,0.2207l2.8633,3.9365l5.5459-6.9707    c0.3428-0.4326,0.9717-0.5049,1.4043-0.1602c0.4326,0.3438,0.5039,0.9727,0.1602,1.4043l-6.3633,8    C20.2295,23.8613,19.9414,24,19.6367,24z" fill="#FE9803"/></g></g><g id="Files_Folder24"/><g id="Files_Folder23"/><g id="Files_Folder22"/><g id="Files_Folder21"/><g id="Files_Folder20"/><g id="Files_Folder19"/><g id="Files_Folder18"/><g id="Files_Folder17"/><g id="Files_Folder16"/><g id="Files_Folder15"/><g id="Files_Folder14"/><g id="Files_Folder13"/><g id="Files_Folder12"/><g id="Files_Folder11"/><g id="Files_Folder10"/><g id="Files_Folder09"/><g id="Files_Folder08"/><g id="Files_Folder07"/><g id="Files_Folder06"/><g id="Files_Folder05"/><g id="Files_Folder04"/><g id="Files_Folder03"/><g id="Files_Folder02"/><g id="Files_Folder01"/></svg>
+                    </div>
+                    <div class="analytics">
+                        <div class="analytics-min">
+                            <div class="a-left-side">
+                                <p class="a-number">12</p>
+                                <p class="a-analytics">Estatistica 3</p>
+                            </div>
+                            <div class="a-right-side">
+                                <svg width="50px" height="50px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Files_Folder40"/><g id="Files_Folder39"/><g id="Files_Folder38"/><g id="Files_Folder37"/><g id="Files_Folder36"/><g id="Files_Folder35"/><g id="Files_Folder34"/><g id="Files_Folder33"/><g id="Files_Folder32"/><g id="Files_Folder31"/><g id="Files_Folder30"/><g id="Files_Folder29"/><g id="Files_Folder28"/><g id="Files_Folder27"/><g id="Files_Folder26"/><g id="Files_Folder25"/><g id="Files_Folder24"/><g id="Files_Folder23"/><g id="Files_Folder22"/><g id="Files_Folder21"/><g id="Files_Folder20"/><g id="Files_Folder19"/><g id="Files_Folder18"/><g id="Files_Folder17"/><g id="Files_Folder16"/><g id="Files_Folder15"/><g id="Files_Folder14"/><g id="Files_Folder13"/><g id="Files_Folder12"/><g id="Files_Folder11"/><g id="Files_Folder10"/><g id="Files_Folder09"/><g id="Files_Folder08"/><g id="Files_Folder07"/><g id="Files_Folder06"/><g id="Files_Folder05"/><g id="Files_Folder04"/><g id="Files_Folder03"/><g id="Files_Folder02"/><g id="Files_Folder01"><path d="M26.76,8.35L26.46,8L21,1.63l-0.24-0.28C20.57,1.13,20.29,1,20,1h-1H6C5.45,1,5,1.45,5,2v28   c0,0.55,0.45,1,1,1h20c0.55,0,1-0.45,1-1V10V9C27,8.76,26.91,8.53,26.76,8.35z" fill="#FFC10A"/><g><path d="M27,9v1h-7c-0.55,0-1-0.45-1-1V1h1c0.29,0,0.57,0.13,0.76,0.35L21,1.63L26.46,8l0.3,0.35    C26.91,8.53,27,8.76,27,9z" fill="#FE9803"/></g><g><path d="M21,19H11c-0.5522,0-1-0.4478-1-1s0.4478-1,1-1h10c0.5522,0,1,0.4478,1,1S21.5522,19,21,19z" fill="#FE9803"/></g><g><path d="M20,25h-8c-0.5522,0-1-0.4478-1-1s0.4478-1,1-1h8c0.5522,0,1,0.4478,1,1S20.5522,25,20,25z" fill="#FE9803"/></g></g></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="analytics last">
+                        <div class="analytics-min">
+                            <div class="a-left-side">
+                                <p class="a-number last">12</p>
+                                <p class="a-analytics last">Estatistica 4</p>
+                            </div>
+                            <div class="a-right-side">
+                                <svg width="50px" height="50px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Files_Folder40"/><g id="Files_Folder39"/><g id="Files_Folder38"/><g id="Files_Folder37"/><g id="Files_Folder36"/><g id="Files_Folder35"/><g id="Files_Folder34"/><g id="Files_Folder33"/><g id="Files_Folder32"/><g id="Files_Folder31"/><g id="Files_Folder30"/><g id="Files_Folder29"/><g id="Files_Folder28"/><g id="Files_Folder27"/><g id="Files_Folder26"/><g id="Files_Folder25"/><g id="Files_Folder24"/><g id="Files_Folder23"/><g id="Files_Folder22"/><g id="Files_Folder21"/><g id="Files_Folder20"/><g id="Files_Folder19"/><g id="Files_Folder18"/><g id="Files_Folder17"/><g id="Files_Folder16"/><g id="Files_Folder15"/><g id="Files_Folder14"/><g id="Files_Folder13"/><g id="Files_Folder12"/><g id="Files_Folder11"/><g id="Files_Folder10"/><g id="Files_Folder09"/><g id="Files_Folder08"/><g id="Files_Folder07"/><g id="Files_Folder06"/><g id="Files_Folder05"><g><path d="M26.76,8.35L26.46,8L21,1.63l-0.24-0.28C20.57,1.13,20.29,1,20,1h-1H6C5.45,1,5,1.45,5,2v28    c0,0.55,0.45,1,1,1h20c0.55,0,1-0.45,1-1V10V9C27,8.76,26.92,8.53,26.76,8.35z" fill="#f7f7f7"/><g><path d="M27,9v1h-7c-0.55,0-1-0.45-1-1V1h1c0.29,0,0.57,0.13,0.76,0.35L21,1.63L26.46,8l0.3,0.35     C26.92,8.53,27,8.76,27,9z" fill="#e6e6e6"/></g></g><g><path d="M14.6367,23c-0.0068,0-0.0146,0-0.0215,0c-0.3125-0.0068-0.6035-0.1592-0.7871-0.4116l-3.6367-5    c-0.3252-0.4468-0.2266-1.0723,0.2207-1.397c0.4473-0.3262,1.0723-0.2266,1.3965,0.2202l2.8633,3.937l5.5459-6.9712    c0.3428-0.4316,0.9727-0.5049,1.4043-0.1602c0.4326,0.3438,0.5039,0.9731,0.1602,1.4053l-6.3633,8    C15.2295,22.8613,14.9414,23,14.6367,23z" fill="#f5cf09"/></g></g><g id="Files_Folder04"/><g id="Files_Folder03"/><g id="Files_Folder02"/><g id="Files_Folder01"/></svg>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="analytics">
-                    <div class="analytics-min">
-                        <div class="a-left-side">
-                            <p class="a-number">12</p>
-                            <p class="a-analytics">Estatistica 2</p>
+                <div class="table-area">
+                    <div class="table-management">
+                        <div class="sortby-area">
+                            <div class="sort-desc">Organizar por:</div>
+                            <div class="sort-options">
+                                <div class="sort-switch active-sort">Gaveta</div>
+                                <div class="sort-switch">Quantidade</div>
+                                <div class="sort-switch">E5- Family</div>
+                            </div>
                         </div>
-                        <div class="a-right-side">
-                            <svg width="50px" height="50px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Files_Folder40"/><g id="Files_Folder39"/><g id="Files_Folder38"/><g id="Files_Folder37"/><g id="Files_Folder36"/><g id="Files_Folder35"/><g id="Files_Folder34"/><g id="Files_Folder33"/><g id="Files_Folder32"/><g id="Files_Folder31"/><g id="Files_Folder30"/><g id="Files_Folder29"/><g id="Files_Folder28"/><g id="Files_Folder27"/><g id="Files_Folder26"/><g id="Files_Folder25"/><g id="Files_Folder24"/><g id="Files_Folder23"/><g id="Files_Folder22"/><g id="Files_Folder21"/><g id="Files_Folder20"/><g id="Files_Folder19"/><g id="Files_Folder18"/><g id="Files_Folder17"/><g id="Files_Folder16"/><g id="Files_Folder15"/><g id="Files_Folder14"><g><g><g><path d="M27,6v22c0,1.65-1.35,3-3,3H8c-1.65,0-3-1.35-3-3V6c0-1.65,1.35-3,3-3h16C25.65,3,27,4.35,27,6z" fill="#FFC10A"/></g></g><g><g><path d="M21,3v2c0,1.1-0.9,2-2,2h-6c-1.1,0-2-0.9-2-2V3c0-1.1,0.9-2,2-2h6C20.1,1,21,1.9,21,3z" fill="#FE9803"/></g></g></g><path d="M21,17h-4v-4c0-0.5522-0.4473-1-1-1s-1,0.4478-1,1v4h-4c-0.5527,0-1,0.4478-1,1s0.4473,1,1,1h4v4   c0,0.5522,0.4473,1,1,1s1-0.4478,1-1v-4h4c0.5527,0,1-0.4478,1-1S21.5527,17,21,17z" fill="#FE9803"/></g><g id="Files_Folder13"/><g id="Files_Folder12"/><g id="Files_Folder11"/><g id="Files_Folder10"/><g id="Files_Folder09"/><g id="Files_Folder08"/><g id="Files_Folder07"/><g id="Files_Folder06"/><g id="Files_Folder05"/><g id="Files_Folder04"/><g id="Files_Folder03"/><g id="Files_Folder02"/><g id="Files_Folder01"/></svg>
+                        <div class="table-management-right">
+                            <form class="search--area" method="get">
+                                <input class="search--text" type="text" placeholder="Search"/>
+                                <button type="submit" class="search--button">
+                                    <span class="search--button-area">
+                                        <svg class="search-icon" viewBox="0 0 20 20">
+                                            <path d="M18.125,15.804l-4.038-4.037c0.675-1.079,1.012-2.308,1.01-3.534C15.089,4.62,12.199,1.75,8.584,1.75C4.815,1.75,1.982,4.726,2,8.286c0.021,3.577,2.908,6.549,6.578,6.549c1.241,0,2.417-0.347,3.44-0.985l4.032,4.026c0.167,0.166,0.43,0.166,0.596,0l1.479-1.478C18.292,16.234,18.292,15.968,18.125,15.804 M8.578,13.99c-3.198,0-5.716-2.593-5.733-5.71c-0.017-3.084,2.438-5.686,5.74-5.686c3.197,0,5.625,2.493,5.64,5.624C14.242,11.548,11.621,13.99,8.578,13.99 M16.349,16.981l-3.637-3.635c0.131-0.11,0.721-0.695,0.876-0.884l3.642,3.639L16.349,16.981z"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </form>
                         </div>
+                    </div>
+                    <div class="table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th data-column="column1">Modelo</th>
+                                    <th data-column="column2">Quantidade</th>
+                                    <th data-column="column3">Gaveta</th>
+                                    <th data-column="column4">
+                                        <div class="button-add-table">
+                                            <a href="/estoque/cpu/add" class="button-add-table-a">
+                                                <svg class="button-add-icon" viewBox="0 0 20 20">
+                                                    <path d="M14.613,10c0,0.23-0.188,0.419-0.419,0.419H10.42v3.774c0,0.23-0.189,0.42-0.42,0.42s-0.419-0.189-0.419-0.42v-3.774H5.806c-0.23,0-0.419-0.189-0.419-0.419s0.189-0.419,0.419-0.419h3.775V5.806c0-0.23,0.189-0.419,0.419-0.419s0.42,0.189,0.42,0.419v3.775h3.774C14.425,9.581,14.613,9.77,14.613,10 M17.969,10c0,4.401-3.567,7.969-7.969,7.969c-4.402,0-7.969-3.567-7.969-7.969c0-4.402,3.567-7.969,7.969-7.969C14.401,2.031,17.969,5.598,17.969,10 M17.13,10c0-3.932-3.198-7.13-7.13-7.13S2.87,6.068,2.87,10c0,3.933,3.198,7.13,7.13,7.13S17.13,13.933,17.13,10"></path>
+                                                </svg>
+                                                Adicionar
+                                            </a>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {{#processadores}}
+                                    <tr>
+                                        <td data-column="column1">{{modelo}}</td>
+                                        <td data-column="column2">{{quantidade}}</td>
+                                        <td data-column="column3">{{gaveta}}</td>
+                                        <td class="edit-area" data-column="column4">
+                                            <div class="edit-add">
+                                                <svg class="edit-icon" viewBox="0 0 20 20">
+                                                    <path d="M14.613,10c0,0.23-0.188,0.419-0.419,0.419H10.42v3.774c0,0.23-0.189,0.42-0.42,0.42s-0.419-0.189-0.419-0.42v-3.774H5.806c-0.23,0-0.419-0.189-0.419-0.419s0.189-0.419,0.419-0.419h3.775V5.806c0-0.23,0.189-0.419,0.419-0.419s0.42,0.189,0.42,0.419v3.775h3.774C14.425,9.581,14.613,9.77,14.613,10 M17.969,10c0,4.401-3.567,7.969-7.969,7.969c-4.402,0-7.969-3.567-7.969-7.969c0-4.402,3.567-7.969,7.969-7.969C14.401,2.031,17.969,5.598,17.969,10 M17.13,10c0-3.932-3.198-7.13-7.13-7.13S2.87,6.068,2.87,10c0,3.933,3.198,7.13,7.13,7.13S17.13,13.933,17.13,10"></path>
+                                                </svg>
+                                            </div>
+                                            <div class="edit-remove">
+                                                <svg class="edit-icon" viewBox="0 0 20 20">
+                                                    <path d="M14.776,10c0,0.239-0.195,0.434-0.435,0.434H5.658c-0.239,0-0.434-0.195-0.434-0.434s0.195-0.434,0.434-0.434h8.684C14.581,9.566,14.776,9.762,14.776,10 M18.25,10c0,4.558-3.693,8.25-8.25,8.25c-4.557,0-8.25-3.691-8.25-8.25c0-4.557,3.693-8.25,8.25-8.25C14.557,1.75,18.25,5.443,18.25,10 M17.382,10c0-4.071-3.312-7.381-7.382-7.381C5.929,2.619,2.619,5.93,2.619,10c0,4.07,3.311,7.382,7.381,7.382C14.07,17.383,17.382,14.07,17.382,10"></path>
+                                                </svg>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                {{/processadores}}
+                            </tbody>
+                        </table>
                     </div>
                 </div>
-                <div class="analytics">
-                    <div class="analytics-min">
-                        <div class="a-left-side">
-                            <p class="a-number">12</p>
-                            <p class="a-analytics">Estatistica 3</p>
-                        </div>
-                        <div class="a-right-side">
-                            <svg width="50px" height="50px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Files_Folder40"/><g id="Files_Folder39"/><g id="Files_Folder38"/><g id="Files_Folder37"/><g id="Files_Folder36"/><g id="Files_Folder35"/><g id="Files_Folder34"/><g id="Files_Folder33"/><g id="Files_Folder32"/><g id="Files_Folder31"/><g id="Files_Folder30"/><g id="Files_Folder29"/><g id="Files_Folder28"/><g id="Files_Folder27"/><g id="Files_Folder26"/><g id="Files_Folder25"/><g id="Files_Folder24"/><g id="Files_Folder23"/><g id="Files_Folder22"/><g id="Files_Folder21"/><g id="Files_Folder20"/><g id="Files_Folder19"/><g id="Files_Folder18"/><g id="Files_Folder17"/><g id="Files_Folder16"/><g id="Files_Folder15"/><g id="Files_Folder14"/><g id="Files_Folder13"/><g id="Files_Folder12"/><g id="Files_Folder11"/><g id="Files_Folder10"/><g id="Files_Folder09"/><g id="Files_Folder08"/><g id="Files_Folder07"/><g id="Files_Folder06"/><g id="Files_Folder05"/><g id="Files_Folder04"/><g id="Files_Folder03"/><g id="Files_Folder02"/><g id="Files_Folder01"><path d="M26.76,8.35L26.46,8L21,1.63l-0.24-0.28C20.57,1.13,20.29,1,20,1h-1H6C5.45,1,5,1.45,5,2v28   c0,0.55,0.45,1,1,1h20c0.55,0,1-0.45,1-1V10V9C27,8.76,26.91,8.53,26.76,8.35z" fill="#FFC10A"/><g><path d="M27,9v1h-7c-0.55,0-1-0.45-1-1V1h1c0.29,0,0.57,0.13,0.76,0.35L21,1.63L26.46,8l0.3,0.35    C26.91,8.53,27,8.76,27,9z" fill="#FE9803"/></g><g><path d="M21,19H11c-0.5522,0-1-0.4478-1-1s0.4478-1,1-1h10c0.5522,0,1,0.4478,1,1S21.5522,19,21,19z" fill="#FE9803"/></g><g><path d="M20,25h-8c-0.5522,0-1-0.4478-1-1s0.4478-1,1-1h8c0.5522,0,1,0.4478,1,1S20.5522,25,20,25z" fill="#FE9803"/></g></g></svg>
-                        </div>
-                    </div>
+            </section>
+        {{/showCpu}}
+        {{#showAddCpu}}
+            <section class="section processadores-add">
+                <div class="section-title">
+                    <div class="logo-title"></div>
+                    <div class="title">Add - Processador</div>
                 </div>
-                <div class="analytics last">
-                    <div class="analytics-min">
-                        <div class="a-left-side">
-                            <p class="a-number last">12</p>
-                            <p class="a-analytics last">Estatistica 4</p>
+                <div class="add-area">
+                    <form class="add-form" method="post">
+                        <input class="input-text-add" type="text" name="modelo" placeholder="Modelo" maxlength="20"/>
+                        <input class="input-number-add" type="number" name="quantidade" placeholder="Quantidade" min="1" max="999"/>
+                        <div class="gaveta">
+                            <div class="gaveta-label">Gaveta</div>
+                            <select name="gaveta">
+                                <option value=1>1</option>
+                                <option value=2>2</option>
+                                <option value=3>3</option>
+                                <option value=4>4</option>
+                                <option value=5>5</option>
+                                <option value=6>6</option>
+                                <option value=7>7</option>
+                                <option value=8>8</option>
+                                <option value=9>9</option>
+                                <option value=10>10</option>
+                                <option value=11>11</option>
+                                <option value=12>12</option>
+                            </select>
                         </div>
-                        <div class="a-right-side">
-                            <svg width="50px" height="50px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Files_Folder40"/><g id="Files_Folder39"/><g id="Files_Folder38"/><g id="Files_Folder37"/><g id="Files_Folder36"/><g id="Files_Folder35"/><g id="Files_Folder34"/><g id="Files_Folder33"/><g id="Files_Folder32"/><g id="Files_Folder31"/><g id="Files_Folder30"/><g id="Files_Folder29"/><g id="Files_Folder28"/><g id="Files_Folder27"/><g id="Files_Folder26"/><g id="Files_Folder25"/><g id="Files_Folder24"/><g id="Files_Folder23"/><g id="Files_Folder22"/><g id="Files_Folder21"/><g id="Files_Folder20"/><g id="Files_Folder19"/><g id="Files_Folder18"/><g id="Files_Folder17"/><g id="Files_Folder16"/><g id="Files_Folder15"/><g id="Files_Folder14"/><g id="Files_Folder13"/><g id="Files_Folder12"/><g id="Files_Folder11"/><g id="Files_Folder10"/><g id="Files_Folder09"/><g id="Files_Folder08"/><g id="Files_Folder07"/><g id="Files_Folder06"/><g id="Files_Folder05"><g><path d="M26.76,8.35L26.46,8L21,1.63l-0.24-0.28C20.57,1.13,20.29,1,20,1h-1H6C5.45,1,5,1.45,5,2v28    c0,0.55,0.45,1,1,1h20c0.55,0,1-0.45,1-1V10V9C27,8.76,26.92,8.53,26.76,8.35z" fill="#f7f7f7"/><g><path d="M27,9v1h-7c-0.55,0-1-0.45-1-1V1h1c0.29,0,0.57,0.13,0.76,0.35L21,1.63L26.46,8l0.3,0.35     C26.92,8.53,27,8.76,27,9z" fill="#e6e6e6"/></g></g><g><path d="M14.6367,23c-0.0068,0-0.0146,0-0.0215,0c-0.3125-0.0068-0.6035-0.1592-0.7871-0.4116l-3.6367-5    c-0.3252-0.4468-0.2266-1.0723,0.2207-1.397c0.4473-0.3262,1.0723-0.2266,1.3965,0.2202l2.8633,3.937l5.5459-6.9712    c0.3428-0.4316,0.9727-0.5049,1.4043-0.1602c0.4326,0.3438,0.5039,0.9731,0.1602,1.4053l-6.3633,8    C15.2295,22.8613,14.9414,23,14.6367,23z" fill="#f5cf09"/></g></g><g id="Files_Folder04"/><g id="Files_Folder03"/><g id="Files_Folder02"/><g id="Files_Folder01"/></svg>
-                        </div>
-                    </div>
+                        <button class="button-add" type="submit">Adicionar</button>
+                    </form>
                 </div>
-            </div>
-            <div class="table-area">
-                <div class="table-management">
-                    <div class="sortby-area">
-                        <div class="sort-desc">Organizar por: </div>
-                        <div class="sort-options">
-                            <div class="sort-switch active-sort">Padrão</div>
-                            <div class="sort-switch">E Family</div>
-                            <div class="sort-switch">E- Family</div>
-                        </div>
-                    </div>
-                    <div class="table-management-right">
-                        <form class="search--area" method="get">
-                            <input class="search--text" type="text" placeholder="Search"/>
-                            <button type="submit" class="search--button">
-                                <span class="search--button-area">
-                                    <svg class="search-icon" viewBox="0 0 20 20">
-                                        <path d="M18.125,15.804l-4.038-4.037c0.675-1.079,1.012-2.308,1.01-3.534C15.089,4.62,12.199,1.75,8.584,1.75C4.815,1.75,1.982,4.726,2,8.286c0.021,3.577,2.908,6.549,6.578,6.549c1.241,0,2.417-0.347,3.44-0.985l4.032,4.026c0.167,0.166,0.43,0.166,0.596,0l1.479-1.478C18.292,16.234,18.292,15.968,18.125,15.804 M8.578,13.99c-3.198,0-5.716-2.593-5.733-5.71c-0.017-3.084,2.438-5.686,5.74-5.686c3.197,0,5.625,2.493,5.64,5.624C14.242,11.548,11.621,13.99,8.578,13.99 M16.349,16.981l-3.637-3.635c0.131-0.11,0.721-0.695,0.876-0.884l3.642,3.639L16.349,16.981z"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                        </form>
-                    </div>
-                </div>
-                <div class="table">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th data-column="column1">Modelo</th>
-                                <th data-column="column2">Quantidade</th>
-                                <th data-column="column3">Gaveta</th>
-                                <th data-column="column4">
-                                    <div class="button-add-table">
-                                        <svg class="button-add-icon" viewBox="0 0 20 20">
-                                            <path d="M14.613,10c0,0.23-0.188,0.419-0.419,0.419H10.42v3.774c0,0.23-0.189,0.42-0.42,0.42s-0.419-0.189-0.419-0.42v-3.774H5.806c-0.23,0-0.419-0.189-0.419-0.419s0.189-0.419,0.419-0.419h3.775V5.806c0-0.23,0.189-0.419,0.419-0.419s0.42,0.189,0.42,0.419v3.775h3.774C14.425,9.581,14.613,9.77,14.613,10 M17.969,10c0,4.401-3.567,7.969-7.969,7.969c-4.402,0-7.969-3.567-7.969-7.969c0-4.402,3.567-7.969,7.969-7.969C14.401,2.031,17.969,5.598,17.969,10 M17.13,10c0-3.932-3.198-7.13-7.13-7.13S2.87,6.068,2.87,10c0,3.933,3.198,7.13,7.13,7.13S17.13,13.933,17.13,10"></path>
-                                        </svg>
-                                        Adicionar
-                                    </div>
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="column100 column2" data-column="column1">E4500</td>
-                                <td class="column100 column3" data-column="column2">39</td>
-                                <td class="column100 column4" data-column="column3">1</td>
-                                <td class="edit-area" data-column="column4">
-                                    <div class="edit-add">
-                                        <svg class="edit-icon" viewBox="0 0 20 20">
-                                            <path d="M14.613,10c0,0.23-0.188,0.419-0.419,0.419H10.42v3.774c0,0.23-0.189,0.42-0.42,0.42s-0.419-0.189-0.419-0.42v-3.774H5.806c-0.23,0-0.419-0.189-0.419-0.419s0.189-0.419,0.419-0.419h3.775V5.806c0-0.23,0.189-0.419,0.419-0.419s0.42,0.189,0.42,0.419v3.775h3.774C14.425,9.581,14.613,9.77,14.613,10 M17.969,10c0,4.401-3.567,7.969-7.969,7.969c-4.402,0-7.969-3.567-7.969-7.969c0-4.402,3.567-7.969,7.969-7.969C14.401,2.031,17.969,5.598,17.969,10 M17.13,10c0-3.932-3.198-7.13-7.13-7.13S2.87,6.068,2.87,10c0,3.933,3.198,7.13,7.13,7.13S17.13,13.933,17.13,10"></path>
-                                        </svg>
-                                    </div>
-                                    <div class="edit-remove">
-                                        <svg class="edit-icon" viewBox="0 0 20 20">
-                                            <path d="M14.776,10c0,0.239-0.195,0.434-0.435,0.434H5.658c-0.239,0-0.434-0.195-0.434-0.434s0.195-0.434,0.434-0.434h8.684C14.581,9.566,14.776,9.762,14.776,10 M18.25,10c0,4.558-3.693,8.25-8.25,8.25c-4.557,0-8.25-3.691-8.25-8.25c0-4.557,3.693-8.25,8.25-8.25C14.557,1.75,18.25,5.443,18.25,10 M17.382,10c0-4.071-3.312-7.381-7.382-7.381C5.929,2.619,2.619,5.93,2.619,10c0,4.07,3.311,7.382,7.381,7.382C14.07,17.383,17.382,14.07,17.382,10"></path>
-                                        </svg>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td data-column="column1">E3100</td>
-                                <td data-column="column2">20</td>
-                                <td data-column="column3">2</td>
-                                <td class="edit-area" data-column="column4">
-                                    <div class="edit-add">
-                                        <svg class="edit-icon" viewBox="0 0 20 20">
-                                            <path d="M14.613,10c0,0.23-0.188,0.419-0.419,0.419H10.42v3.774c0,0.23-0.189,0.42-0.42,0.42s-0.419-0.189-0.419-0.42v-3.774H5.806c-0.23,0-0.419-0.189-0.419-0.419s0.189-0.419,0.419-0.419h3.775V5.806c0-0.23,0.189-0.419,0.419-0.419s0.42,0.189,0.42,0.419v3.775h3.774C14.425,9.581,14.613,9.77,14.613,10 M17.969,10c0,4.401-3.567,7.969-7.969,7.969c-4.402,0-7.969-3.567-7.969-7.969c0-4.402,3.567-7.969,7.969-7.969C14.401,2.031,17.969,5.598,17.969,10 M17.13,10c0-3.932-3.198-7.13-7.13-7.13S2.87,6.068,2.87,10c0,3.933,3.198,7.13,7.13,7.13S17.13,13.933,17.13,10"></path>
-                                        </svg>
-                                    </div>
-                                    <div class="edit-remove">
-                                        <svg class="edit-icon" viewBox="0 0 20 20">
-                                            <path d="M14.776,10c0,0.239-0.195,0.434-0.435,0.434H5.658c-0.239,0-0.434-0.195-0.434-0.434s0.195-0.434,0.434-0.434h8.684C14.581,9.566,14.776,9.762,14.776,10 M18.25,10c0,4.558-3.693,8.25-8.25,8.25c-4.557,0-8.25-3.691-8.25-8.25c0-4.557,3.693-8.25,8.25-8.25C14.557,1.75,18.25,5.443,18.25,10 M17.382,10c0-4.071-3.312-7.381-7.382-7.381C5.929,2.619,2.619,5.93,2.619,10c0,4.07,3.311,7.382,7.381,7.382C14.07,17.383,17.382,14.07,17.382,10"></path>
-                                        </svg>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td data-column="column1">E4300</td>
-                                <td data-column="column2">S/Estoque</td>
-                                <td data-column="column3">---</td>
-                                <td class="edit-area" data-column="column4">
-                                    <div class="edit-add">
-                                        <svg class="edit-icon" viewBox="0 0 20 20">
-                                            <path d="M14.613,10c0,0.23-0.188,0.419-0.419,0.419H10.42v3.774c0,0.23-0.189,0.42-0.42,0.42s-0.419-0.189-0.419-0.42v-3.774H5.806c-0.23,0-0.419-0.189-0.419-0.419s0.189-0.419,0.419-0.419h3.775V5.806c0-0.23,0.189-0.419,0.419-0.419s0.42,0.189,0.42,0.419v3.775h3.774C14.425,9.581,14.613,9.77,14.613,10 M17.969,10c0,4.401-3.567,7.969-7.969,7.969c-4.402,0-7.969-3.567-7.969-7.969c0-4.402,3.567-7.969,7.969-7.969C14.401,2.031,17.969,5.598,17.969,10 M17.13,10c0-3.932-3.198-7.13-7.13-7.13S2.87,6.068,2.87,10c0,3.933,3.198,7.13,7.13,7.13S17.13,13.933,17.13,10"></path>
-                                        </svg>
-                                    </div>
-                                    <div class="edit-remove">
-                                        <svg class="edit-icon" viewBox="0 0 20 20">
-                                            <path d="M14.776,10c0,0.239-0.195,0.434-0.435,0.434H5.658c-0.239,0-0.434-0.195-0.434-0.434s0.195-0.434,0.434-0.434h8.684C14.581,9.566,14.776,9.762,14.776,10 M18.25,10c0,4.558-3.693,8.25-8.25,8.25c-4.557,0-8.25-3.691-8.25-8.25c0-4.557,3.693-8.25,8.25-8.25C14.557,1.75,18.25,5.443,18.25,10 M17.382,10c0-4.071-3.312-7.381-7.382-7.381C5.929,2.619,2.619,5.93,2.619,10c0,4.07,3.311,7.382,7.381,7.382C14.07,17.383,17.382,14.07,17.382,10"></path>
-                                        </svg>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </section>
-        <section class="section processadores-add">
-            <div class="section-title">
-                <div class="logo-title"></div>
-                <div class="title">Add - Processador</div>
-            </div>
-            <div class="add-area">
-                <form class="add-form" method="post">
-                    <input class="input-text-add" type="text" name="modelo" placeholder="Modelo" maxlength="20"/>
-                    <input class="input-number-add" type="number" name="quantidade" placeholder="Quantidade" min="1" max="999"/>
-                    <div class="gaveta">
-                        <div class="gaveta-label">Gaveta</div>
-                        <select name="gaveta">
-                            <option value=1>1</option>
-                            <option value=2>2</option>
-                            <option value=3>3</option>
-                            <option value=4>4</option>
-                            <option value=5>5</option>
-                            <option value=6>6</option>
-                            <option value=7>7</option>
-                            <option value=8>8</option>
-                            <option value=9>9</option>
-                            <option value=10>10</option>
-                            <option value=11>11</option>
-                            <option value=12>12</option>
-                        </select>
-                    </div>
-                    <button class="button-add" type="submit">Adicionar</button>
-                </form>
-            </div>
-        </section>
+            </section>
+        {{/showAddCpu}}
     </div>
 </body>
 </html>

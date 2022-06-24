@@ -22,7 +22,7 @@ ul{
 .section{
     flex-grow: 1;
     background-color: #f7f7f7;
-    padding: 50px;
+    padding: 30px 40px 50px 30px;
     overflow-x: hidden;
 }
 .nav-filler{

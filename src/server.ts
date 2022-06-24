@@ -18,4 +18,4 @@ server.use(Routes);
 server.use(express.static('public'));
 
 // Porta do Servidor
-server.listen(3000);
+server.listen(process.env.PORT);

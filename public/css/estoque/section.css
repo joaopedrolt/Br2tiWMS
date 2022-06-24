@@ -24,12 +24,6 @@
 .title{
     margin-left: 50px;
 }
-.section.processadores{
-  
-}
-.section.processadores-add{
-    display: none;
-}
 
 @media (max-width: 765px) {
     .logo-title{

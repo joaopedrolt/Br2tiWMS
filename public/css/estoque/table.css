@@ -126,18 +126,21 @@ td{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 5px;
+    margin-right: 15px;
 }
 .search--text{
     margin-left: 80px;
 }
-.button-add-table{
+.button-add-table-a{
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     width: 100px;
     margin: auto;
+    text-decoration: 0;
+
 }
 .button-add-icon{
     height: 30px;

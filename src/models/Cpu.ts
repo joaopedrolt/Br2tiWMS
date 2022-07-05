@@ -27,7 +27,7 @@ export const Cpu = sequelize.define<CpuInstance>('Cpu', {
         type: DataTypes.INTEGER,
         allowNull: false
     },
-    desc: {
+    core: {
         type: DataTypes.STRING
     }
 }, {

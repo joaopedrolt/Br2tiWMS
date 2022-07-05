@@ -14,9 +14,7 @@ export const getCpu = async (req: Request, res:Response)=>{
         console.log("Erro ao carregar os procesadores: ", error);
     }
 
-    res.render('estoque', {
-        processadores,
-        showCpu
+    res.render('estoqueCpu', {
     });
     
 };

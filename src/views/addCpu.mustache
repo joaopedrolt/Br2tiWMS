@@ -1,0 +1,37 @@
+{{>partials/heads/headAdd}}
+<body>
+    <div class="frame">
+        {{>partials/menu}}
+        <section class="section processadores-add">
+                <div class="section-title">
+                    <div class="logo-title"></div>
+                    <div class="title">Add - Processador</div>
+                </div>
+                <div class="add-area">
+                    <form class="add-form" method="post">
+                        <input class="input-text-add" type="text" name="modelo" placeholder="Modelo" maxlength="20"/>
+                        <input class="input-number-add" type="number" name="quantidade" placeholder="Quantidade" min="1" max="999"/>
+                        <div class="gaveta">
+                            <div class="gaveta-label">Gaveta</div>
+                            <select name="gaveta">
+                                <option value=1>1</option>
+                                <option value=2>2</option>
+                                <option value=3>3</option>
+                                <option value=4>4</option>
+                                <option value=5>5</option>
+                                <option value=6>6</option>
+                                <option value=7>7</option>
+                                <option value=8>8</option>
+                                <option value=9>9</option>
+                                <option value=10>10</option>
+                                <option value=11>11</option>
+                                <option value=12>12</option>
+                            </select>
+                        </div>
+                        <button class="button-add" type="submit">Adicionar</button>
+                    </form>
+                </div>
+        </section>
+    </div>
+</body>
+</html>

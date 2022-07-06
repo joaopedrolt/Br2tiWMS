@@ -58,9 +58,9 @@
                         <div class="sortby-area">
                             <div class="sort-desc">Organizar por:</div>
                             <div class="sort-options">
-                                <div class="sort-switch active-sort">Gaveta</div>
+                                <div class="sort-switch">Gaveta</div>
                                 <div class="sort-switch">Quantidade</div>
-                                <div class="sort-switch">E5- Family</div>
+                                <div class="sort-switch">Núcleos</div>
                             </div>
                         </div>
                         <div class="table-management-right">
@@ -83,6 +83,7 @@
                                     <th data-column="column1">Modelo</th>
                                     <th data-column="column2">Quantidade</th>
                                     <th data-column="column3">Gaveta</th>
+                                    <th data-column="column3">Núcleos</th>
                                     <th data-column="column4">
                                         <div class="button-add-table">
                                             <a href="/estoque/cpu/adicionar" class="button-add-table-a">
@@ -101,6 +102,7 @@
                                         <td class="modelo-td" data-column="column1">{{modelo}}</td>
                                         <td class="quantidade-td" data-column="column2">{{quantidade}}</td>
                                         <td class="gaveta-td" data-column="column3">{{gaveta}}</td>
+                                        <td class="nucleos-td" data-column="column3">{{core}}</td>
                                         <td class="edit-area" data-column="column4">
                                             <a href="/estoque/cpu/{{id}}/mais" class="edit-add">
                                                 <svg class="edit-icon" viewBox="0 0 20 20">
@@ -119,9 +121,11 @@
                         </table>
                     </div>
                 </div>
+                {{#alert}}
                 <div class="alert sucesss">Item cadastrado com sucesso!
                     <div class="close-alert">&#10006;</div>
                 </div>
+                {{/alert}}
         </section>
     </div>
 </body>

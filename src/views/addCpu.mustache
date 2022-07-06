@@ -28,12 +28,23 @@
                                 <option value=12>12</option>
                             </select>
                         </div>
+                        <div class="gaveta">
+                            <div class="gaveta-label">Núcleos</div>
+                            <select name="core">
+                                <option value="Dual-Core">Dual-Core</option>
+                                <option value="Quad-Core">Quad-Core</option>
+                                <option value="Six-Core">Six-Core</option>
+                                <option value="Octa-Core">Octa-Core</option>
+                                <option value="Deca-Core">Deca-Core</option>
+                        </div>
                         <button class="button-add" type="submit">Adicionar</button>
                     </form>
                 </div>
+                {{#error}}
                 <div class="alert error">Preencha todos os Campos Corretamente!
                     <div class="close-alert">&#10006;</div>
                 </div>
+                {{/error}}
         </section>
     </div>
 </body>

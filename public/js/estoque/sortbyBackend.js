@@ -9,7 +9,7 @@ const rowsLength = rows.length
 
 var tbody = document.querySelector("tbody");
 
-var sortedTableE5 = [];
+var sortedTableE5 = new Array();
 
 const sortedTableQuantity = function sortTableByQuantity(rows){
     let numbersArray = [];
@@ -45,17 +45,48 @@ const sortedTableQuantity = function sortTableByQuantity(rows){
 }
 
 function sortTableByE5(rows){
-    let onlyE5 = new Array();
+    let dualCore = new Array();
+    let quadCore = new Array();
+    let sixCore = new Array();
+    let octaCore = new Array();
+    let decaCore = new Array();
     let leftElements = new Array();
+    
     rows.forEach(a => {
-        let sliced = a.querySelector(".modelo-td").innerHTML.slice(0, 3);
-        if (sliced == "E5-"){
-            onlyE5.push(a);
-        }else{
-            leftElements.push(a);
+        let content = a.querySelector(".nucleos-td").innerHTML;
+
+        switch (content) {
+            case "Dual-Core":
+                dualCore.push(a);
+                break;
+            case "Quad-Core":
+                quadCore.push(a);
+                break;
+            case "Six-Core":
+                sixCore.push(a);
+                break;
+            case "Octa-Core":
+                octaCore.push(a);
+                break;
+            case "Deca-Core":
+                decaCore.push(a);
+                break;
+            default:
+                leftElements.push(a);
+                break;
         }
+
     });
-    sortedTableE5 = onlyE5.concat(leftElements);
+
+    let sorting;
+
+    sorting = dualCore.concat(quadCore);
+    sorting = sorting.concat(sixCore);
+    sorting = sorting.concat(octaCore);
+    sorting = sorting.concat(decaCore);
+    sorting = sorting.concat(leftElements);
+    
+    sortedTableE5 = sorting; 
 };
 
 sortTableByE5(rows);

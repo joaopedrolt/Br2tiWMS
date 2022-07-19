@@ -21,7 +21,11 @@ export const Cpu = sequelize.define<CpuInstance>('Cpu', {
     },
     quantidade: {
         type: DataTypes.INTEGER,
-        allowNull: false
+        allowNull: false,
+        set(value : number){
+            let filtered : number = (value < 0) ? 0 : value;
+            this.setDataValue('quantidade', filtered)
+        }
     },
     gaveta: {
         type: DataTypes.INTEGER,

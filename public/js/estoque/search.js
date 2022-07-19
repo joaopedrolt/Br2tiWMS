@@ -4,9 +4,19 @@ const Tablerows = Array.from(document.querySelectorAll("tr"));
 
 Tablerows.shift();
 
+search.value = sessionStorage.getItem("search");
+updateTable();
+
 search.addEventListener("keyup", ()=>{
 
+    updateTable();
+
+});
+
+function updateTable(){
+
     let input = search.value, td;
+    sessionStorage.setItem("search", input);
 
     for (let i = 0; i < Tablerows.length; i++){
         if(Tablerows[i].getAttribute("style") != null){
@@ -29,4 +39,4 @@ search.addEventListener("keyup", ()=>{
         };
     };
 
-});
+}

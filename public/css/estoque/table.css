@@ -155,6 +155,12 @@ td{
 .table{
     overflow-x: auto;
 }
+.edit-remove{
+    display: none;
+}
+.a0{
+    display: block;
+}
 
 @media (max-width: 798px) {
     .table-management{

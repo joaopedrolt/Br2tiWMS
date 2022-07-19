@@ -5,6 +5,7 @@ import { getAddAlert , setAddAlert } from './addController';
 export const getCpu = async (req: Request, res:Response)=>{
 
     let processadores;
+    let zero;
     let showAddAlert = getAddAlert();
     console.log(showAddAlert);
 
@@ -17,7 +18,8 @@ export const getCpu = async (req: Request, res:Response)=>{
 
     res.render('estoqueCpu', {
         processadores,
-        showAddAlert
+        showAddAlert,
+        zero
     });
 
     /* setAddAlert(); */
